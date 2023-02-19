@@ -89,3 +89,14 @@ const reverse = (str, a) => {
 //const name = 'test';
 console.log(reverse('exlet', 'H'))
 //-----------------------------------------------------
+
+const takeTwo = (str) => {
+    let a = 0
+    let b = 1
+
+    let c = str[a] + str[b]
+//console.log(c)
+    return c
+}
+console.log(takeTwo('1234'))
+  //--------------------------------------
