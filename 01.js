@@ -23,3 +23,26 @@ const countChars = (str, char) => {
     return count;
 };
 console.log(countChars('FEar cuts deeper than swords.', 'E'))
+//--------------------------------------------------------
+
+const reverse = (str, a) => {
+    let i = 0;
+    // Нейтральный элемент для строк это пустая строка
+    let result = '';
+    while (i < str.length) {
+        if(str[i] === a ) {
+            i = i + 1
+        } else {
+            result = `${result}${str[i]}`
+
+            // То же самое через конкатенацию
+            // result = str[i] + result;
+            i = i + 1;
+        }
+
+    }
+
+    return result;
+};
+//const name = 'test';
+console.log(reverse('If I look back I am lost', 'I'))
