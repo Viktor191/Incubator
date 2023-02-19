@@ -46,3 +46,25 @@ const reverse = (str, a) => {
 };
 //const name = 'test';
 console.log(reverse('If I look back I am lost', 'I'))
+//-------------------------------------------------------
+const makeItFunny = (str, a) => {
+    let i = 0
+    let result = ''
+    while (i < str.length) {
+        if((i + 1) % a === 0 ) {
+            result = `${result}${str[i].toUpperCase()}`
+            console.log(result)
+            i = i + 1
+        } else {
+            result = `${result}${str[i]}`
+            //console.log(result)
+            i = i + 1;
+        }
+    }
+    return result;
+}
+const text = 'I never look back';
+// Каждый третий элемент
+console.log(makeItFunny(text, 3)); // 'I NevEr LooK bAck'
+// .toUpperCase()
+//---------------------------------------------------------
