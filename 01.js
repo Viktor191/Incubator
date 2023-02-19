@@ -100,3 +100,13 @@ const takeTwo = (str) => {
 }
 console.log(takeTwo('1234'))
   //--------------------------------------
+const mixTwo = (str) => {
+    let result = ''
+    for (let i = 0; i < 2; i += 1) {
+        result = `${str[i]}${result}`;
+    }
+    return result;
+
+}
+
+console.log( mixTwo('at')) // 'taatkc'
