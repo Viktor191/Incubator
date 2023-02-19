@@ -68,3 +68,24 @@ const text = 'I never look back';
 console.log(makeItFunny(text, 3)); // 'I NevEr LooK bAck'
 // .toUpperCase()
 //---------------------------------------------------------
+const reverse = (str, a) => {
+    let i = 0;
+    // Нейтральный элемент для строк это пустая строка
+    let result = '';
+    while (i < str.length) {
+        if(str[i] === a ) {
+            result = true
+            return result
+
+        } else {
+            i = i + 1;
+        }
+
+    }
+
+
+    return false;
+};
+//const name = 'test';
+console.log(reverse('exlet', 'H'))
+//-----------------------------------------------------
