@@ -110,3 +110,28 @@ const mixTwo = (str) => {
 }
 
 console.log( mixTwo('at')) // 'taatkc'
+//----------------------------------
+const test = (str) => {
+    let d = 1
+    let i = 0
+    let k = 1
+    let res = '';
+    while (k < str.length) {
+        res = res + (str[d] + str[i]);
+        k = k + 2;
+        i = i + 2;
+        d = d + 2;
+
+    }
+    if(str.length % 2 !== 0) {
+        return res = res + str[str.length - 1]
+    } else {
+        return res
+    }
+
+}
+console.log(test('attack'));
+//encrypt('attack'); // 'taatkc'
+//encrypt('move'); // 'omev'
+//-------------------------------------------------
+
