@@ -271,4 +271,11 @@ const test = (str) => {
     return arr
 }
 console.log(test('you will win'))
-*/
+//--------------------------------------------------------------------
+function litres(time) {
+    let result
+    // console.log(Math.floor(74.5));
+    result = (Math.floor(time)) / 0.5
+    return (Math.floor(result / 4))
+}
+console.log(litres(1))
