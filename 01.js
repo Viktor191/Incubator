@@ -173,3 +173,43 @@ console.log(test('attack'));
 */
 
 //-------------------------------------------------
+// Удаляет из строки заданный знак, в примере = восклицательнй знак '!'
+function removeExclamationMarks(s) {
+    let result = ''
+    for(i = 0; i < s.length; i++) {
+        if(s[i] === '!') {
+            i = i + 1
+        } else {
+            result = result + s[i]
+            //console.log(result)
+        }
+    }
+    return result;
+}
+console.log(removeExclamationMarks('Hi Hello!'))
+//---------------------------------------------------
+
+function maxNam(arr) {
+    return Math.max.apply(null, arr);
+}
+
+function cutArr(arr, max) {
+    return arr.filter(function(f) { return f !== max })
+}
+
+
+function arrMaxNumber(n, arr) {
+
+    let arr2 = []
+
+    for(i = 0; i < n; i++) {
+        let resultMax = (maxNam(arr))
+        arr = cutArr(arr, resultMax)
+
+        arr2[i] = resultMax
+
+    }
+
+    return arr2.reverse();
+}
+console.log(arrMaxNumber(3, [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]))
