@@ -213,3 +213,62 @@ function arrMaxNumber(n, arr) {
     return arr2.reverse();
 }
 console.log(arrMaxNumber(3, [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]))
+//---------------------------------------------------------------
+const test = (a) => {
+    //let a = 1
+    switch (a) {
+        case 1:
+            console.log('statement1');
+            break;
+
+        case 2:
+            console.log('statement2');
+            break;
+
+        default:
+            console.log('statement default');
+            break;
+    }
+}
+console.log(test(2))
+//--------------------------------------------------------------
+const test = (str) => {
+    let result = str.split(' ');
+    console.log(result)
+    let result2 = ''
+    let str2 = ''
+    for(i = 0; i < result.length; i++) {
+        result2 = `${result[i]} ${result[i].length},`
+        //console.log(result2)
+        str2 = str2 + result2// + ','
+        //console.log(str2)
+    }
+    console.log(str2)
+    //let result3 = str2
+    let x = result.length
+    let arr = str2.split(',', x);
+
+    return arr
+}
+console.log(test('you will win'))
+//-----------------------------------------------------------------
+const test = (str) => {
+    let result = str.split(' ');
+    console.log(result)
+    let result2 = ''
+    let str2 = ''
+    for(i = 0; i < result.length; i++) {
+        result2 = `${result[i]} ${result[i].length},`
+        //console.log(result2)
+        str2 = str2 + result2// + ','
+        //console.log(str2)
+    }
+    console.log(str2)
+    //let result3 = str2
+    let x = result.length
+    let arr = str2.split(',', x);
+
+    return arr
+}
+console.log(test('you will win'))
+*/
