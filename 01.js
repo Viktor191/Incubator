@@ -279,3 +279,16 @@ function litres(time) {
     return (Math.floor(result / 4))
 }
 console.log(litres(1))
+//--------------------------------------------------------------------
+
+function checkObj(obj, checkProp) {
+    if (obj.hasOwnProperty(checkProp)) {
+        let a = obj[checkProp];
+        return a
+    } else {
+        return "Not Found";
+    }
+}
+
+console.log(checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "bed")) 
+//-------------------------------------------------------------------
