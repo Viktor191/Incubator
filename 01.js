@@ -336,3 +336,22 @@ console.log(reverseWords("The greatest victory is that which requires no battle"
 var arr = [ 1, 2, 3, 4, 5 ];
 var rev = [...arr].reverse();
 console.log(rev);
+//------------------------------------------------------
+
+function mystery() {
+    var results =
+        {sanity: 'Hello'};
+    return results.sanity;
+
+}
+console.log(mystery())
+
+
+function repeatStr (n, s) {
+  let result = ''
+  for(i = 0; i < n; i++) {
+    result = result + s
+  }
+  return result;
+}
+console.log(repeatStr (5, '0'))
