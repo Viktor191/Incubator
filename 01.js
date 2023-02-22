@@ -321,6 +321,18 @@ function learnJavaScript() {
 
     return fahrenheit
 }
-*/
+
 // "The greatest victory is that which requires no battle" --> "battle no requires which that is victory greatest The"
-/*
+
+function reverseWords(str){
+
+  let arr = str.split(' ')
+  let result = arr.reverse();
+  let a = result.join(' ')
+  return a // reverse those words
+}
+console.log(reverseWords("The greatest victory is that which requires no battle"))
+
+var arr = [ 1, 2, 3, 4, 5 ];
+var rev = [...arr].reverse();
+console.log(rev);
