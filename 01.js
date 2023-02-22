@@ -313,3 +313,14 @@ const revers = (arr) => {
 }
 let arr = [1,2,3,4,10]
 console.log(revers(arr))
+//-------------------------------
+function learnJavaScript() {
+    let celsius = [-15, -5, 0, 10, 16, 20, 24, 32]
+
+    let fahrenheit = celsius.map(t => t * 1.8 + 32 + ' ')
+
+    return fahrenheit
+}
+*/
+// "The greatest victory is that which requires no battle" --> "battle no requires which that is victory greatest The"
+/*
