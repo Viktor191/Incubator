@@ -304,3 +304,12 @@ const revers = (arr) => {
 let arr = [1,2,3,4,-5]
 console.log(revers(arr))
 //--------------------------------------------
+const revers = (arr) => {
+    let result = ''
+    result = arr.map(num => num * -1 + ' ')
+    result = arr.map(num => num * -1)
+
+    return result
+}
+let arr = [1,2,3,4,10]
+console.log(revers(arr))
