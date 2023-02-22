@@ -292,3 +292,15 @@ function checkObj(obj, checkProp) {
 
 console.log(checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "bed")) 
 //-------------------------------------------------------------------
+const revers = (arr) => {
+    let result = ''
+    for (let i = 0; i < arr.length; i++) {
+        result = result + arr[i] * -1 + ','
+
+
+    }
+    return result.split(',', arr.length)
+}
+let arr = [1,2,3,4,-5]
+console.log(revers(arr))
+//--------------------------------------------
