@@ -383,3 +383,19 @@ console.log(m,b,c)
 console.log(result)
 console.log(arr.length)
 //--------------------------------------------
+let arr = [
+    [10, 5, 6, 2, 3],
+    [41, 50, 61, 8, 5],
+    [14, 18, 84, 74, 89]
+];
+function sumOfMinimums(arr) {
+    let m = 0
+    let result = 0
+    for(i = 0; i < arr.length; i++) {
+        m = Math.min(...arr[i]);
+        result = result + m
+    }
+    return result
+}
+console.log(sumOfMinimums(arr))
+//--------------------------------------------------
