@@ -436,3 +436,14 @@ console.log(comparison([1, 2, 3, 4], [1, 2, 3]))
 
 console.log(comparison([1, 2, 3, 7], [1, 2, 3, 6]))
 //-------------------------------
+let speak = function () {
+    console.log(this.sound + '! Меня зовут ' + this.name + '!')
+}
+const cat = {
+    sound: 'Мяу',
+    name: 'Варежка',
+    speak: speak
+}
+console.log(cat.speak())
+cat.speak()
+//-------------------------------------
