@@ -355,3 +355,31 @@ function repeatStr (n, s) {
   return result;
 }
 console.log(repeatStr (5, '0'))
+//-----------------------------------
+function shortcut (string) {
+    let sl = string.split('')
+
+    sl = sl.filter( a => a !== 'a')
+    sl = sl.filter( a => a !== 'i')
+    sl = sl.filter( a => a !== 'o')
+    sl = sl.filter( a => a !== 'u')
+    let result = sl.filter( a => a !== 'e').join('')
+
+    return result;
+}
+console.log(shortcut("hello"))
+//---------------------------------------------
+let arr = [
+    [10, 5, 6, 2, 3],
+    [41, 50, 61, 8, 5],
+    [14, 18, 84, 74, 89]
+];
+let m = Math.min(...arr[0]);
+let b = Math.min(...arr[1]);
+let c = Math.min(...arr[2]);
+result = m + b + c
+console.log(m,b,c)
+//console.log(myArray[1][0])
+console.log(result)
+console.log(arr.length)
+//--------------------------------------------
