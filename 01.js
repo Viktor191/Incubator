@@ -399,3 +399,20 @@ function sumOfMinimums(arr) {
 }
 console.log(sumOfMinimums(arr))
 //--------------------------------------------------
+var arr = [0, 1, 2, 2, 3, 5, 5];
+
+const fNamber = (n) => {
+    let b = 0
+
+    arr.forEach(function(item, index, array) {
+        // ... делать что-то с item
+        if(n === item) {
+            b = b + 1
+        }
+
+    });
+    return b + ' b'
+
+}
+console.log(fNamber(5))
+//-------------------------------------------------
