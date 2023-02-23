@@ -416,3 +416,23 @@ const fNamber = (n) => {
 }
 console.log(fNamber(5))
 //-------------------------------------------------
+const comparison = (a, b) => {
+    let result = ''
+    if (a.length !== b.length) {
+        return false
+    }
+    for (i = 0; i < a.length; i++) {
+        result = a[i] === b[i]
+        if(result === false){
+            return result
+        }
+    }
+    return result
+
+}
+console.log(comparison([1, 2, 3], [1, 2, 3]))
+
+console.log(comparison([1, 2, 3, 4], [1, 2, 3]))
+
+console.log(comparison([1, 2, 3, 7], [1, 2, 3, 6]))
+//-------------------------------
