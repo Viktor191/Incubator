@@ -447,3 +447,12 @@ const cat = {
 console.log(cat.speak())
 cat.speak()
 //-------------------------------------
+// Разворот строки берем '12345' получаем '54321'
+function solution(str){
+    let result = ''
+    for(i = 0; i < str.length; i++) {
+        result = str[i] + result;
+    }
+    return result
+}
+console.log(solution('12345'))
