@@ -487,3 +487,19 @@ function trim(str, size) {
 }
 console.log(trim('sk', 2))
 //--------------------------------------------------
+function pairZeros(arr) {
+    let b = 0
+    let result = ''
+
+    for(i = 0; i < arr.length; i++) {
+        result = result + arr[i]
+        if(arr[i] === 0) {
+            i = i + 1
+        }
+
+    }
+    return result
+}
+
+console.log(pairZeros([0, 1, 7, 0, 2, 2, 0, 0, 1, 0]))
+//-------------------------------------------------------
