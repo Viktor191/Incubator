@@ -503,3 +503,9 @@ function pairZeros(arr) {
 
 console.log(pairZeros([0, 1, 7, 0, 2, 2, 0, 0, 1, 0]))
 //-------------------------------------------------------
+const test = () = > {
+    let arr = {name: 'Jeremy', age: 24, role: 'Software Engineer'}
+    arr = Object.entries(arr).sort()
+}
+
+console.log(arr);
