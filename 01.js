@@ -456,3 +456,34 @@ function solution(str){
     return result
 }
 console.log(solution('12345'))
+//-------------------------------------------------
+function trim(str, size) {
+    let result = ''
+    let a = size
+    //let srt2 = str
+
+    if(str.length <= size) {
+        return str
+    }
+    if(str.length < 3) {
+        return str[0] + '...'
+    }
+
+    if(a <= 3) {
+        for(i = 0; i < a; i++) {
+
+            result = result + str[i];
+
+        }
+        return result + '...';
+    }
+    for(i = 0; i < a - 3; i++) {
+
+        result = result + str[i];
+
+    }
+
+    return result + '...';
+}
+console.log(trim('sk', 2))
+//--------------------------------------------------
