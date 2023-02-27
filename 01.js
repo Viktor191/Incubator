@@ -569,3 +569,18 @@ const stringToNumber = function(str){
 }
 console.log(stringToNumber('2356485'))
 //--------------------------------------------
+function sumStr(a,b) {
+    if (a == undefined) {
+        a = 0
+    }
+    if (b == undefined) {
+        b = 0
+    }
+    let c = Number(a);
+    let d = Number(b);
+    let v = (c + d).toString()
+    return v
+}
+console.log(sumStr( '4'))
+//------------------------------------------------
+
