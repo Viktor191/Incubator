@@ -563,3 +563,9 @@ function largest(n, array) {
 }
 console.log(largest(4, [7,7,5,5,3,2,1]))
 //-----------------------------------------
+const stringToNumber = function(str){
+    // put your code here
+    return a = Number(str); ;
+}
+console.log(stringToNumber('2356485'))
+//--------------------------------------------
