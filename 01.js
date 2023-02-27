@@ -535,3 +535,17 @@ function arrMaxNumber(n, arr) {
 }
 console.log(arrMaxNumber(3, [7,7,5,4,3,2,1]))
 //------------------------------------------------
+function largest(n, array) {
+    let d = ''
+    array.sort(function(a, b) {
+        return a - b;
+    });
+    let revArr = array.reverse();
+    d = revArr.splice(0, n);
+    d = d.sort(function(a, b) {
+        return a - b;
+    });
+    return d
+}
+console.log(largest(4, [7,7,5,5,3,2,1]))
+//------------------------------------------
