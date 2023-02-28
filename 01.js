@@ -654,3 +654,13 @@ function checkObj(obj, checkProp) {
 
 console.log(checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "gt") ) //should return the string pony.
 //--------------------------------------------------------------
+function remainder(n, m){
+    // Divide the larger argument by the smaller argument and return the remainder
+    if(n > m) {
+        return n % m
+    } else {
+        return m % n
+    }
+}
+console.log(remainder(13, 0))
+//-------------------------------------------------------
