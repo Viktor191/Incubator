@@ -630,3 +630,13 @@ function shortcut (str) {
 }
 console.log(shortcut("Count my unique consonants!!"))
 //----------------------------------------------------
+let a = ['a', 'b', 'c', 'd', 'e']
+function check(a, x) {
+    if(a.indexOf(x) !== -1) {
+        return true
+    } else {
+        return false
+    }
+}
+console.log(check(a, 'w'))
+//--------------------------------------------------------
