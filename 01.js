@@ -640,3 +640,17 @@ function check(a, x) {
 }
 console.log(check(a, 'w'))
 //--------------------------------------------------------
+function checkObj(obj, checkProp) {
+    // Only change code below this line
+    if(obj[checkProp] === undefined) {
+        return "Not Found"
+    } else {
+        return obj[checkProp]
+    }
+
+    //return obj[checkProp];
+    // Only change code above this line
+}
+
+console.log(checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "gt") ) //should return the string pony.
+//--------------------------------------------------------------
