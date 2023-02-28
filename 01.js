@@ -584,3 +584,14 @@ function sumStr(a,b) {
 console.log(sumStr( '4'))
 //------------------------------------------------
 
+var arr = ['a', 'b', 'c', 'd', 'e'];
+
+function first(arr, n) {
+    if (n == undefined) {
+
+        return arr.splice(0, 1);
+    }
+    // return arr;
+    return arr.splice(0, n);
+}
+console.log(first(arr, 0))
