@@ -595,3 +595,38 @@ function first(arr, n) {
     return arr.splice(0, n);
 }
 console.log(first(arr, 0))
+//--------------------------------------------------
+function shortcut (str) {
+    let a = str.toLowerCase()
+
+    let sl = a.split('')
+
+    sl = sl.filter( a => a !== 'a')
+    sl = sl.filter( a => a !== 'i')
+    sl = sl.filter( a => a !== 'o')
+    sl = sl.filter( a => a !== 'u')
+
+    sl = sl.filter( a => a !== '0')
+    sl = sl.filter( a => a !== '1')
+    sl = sl.filter( a => a !== '2')
+    sl = sl.filter( a => a !== '3')
+    sl = sl.filter( a => a !== '4')
+    sl = sl.filter( a => a !== '5')
+    sl = sl.filter( a => a !== '6')
+    sl = sl.filter( a => a !== '7')
+    sl = sl.filter( a => a !== '8')
+    sl = sl.filter( a => a !== '9')
+
+    sl = sl.filter( a => a !== ' ')
+    sl = sl.filter( a => a !== '!')
+
+
+    let result = sl.filter( a => a !== 'e').join('')
+
+    const newSet = new Set(result);//Убирает дубли из массива и возвращает строку 
+    const uniqueNumbers = Array.from(newSet);// переводит строку снова в массив
+    console.log(uniqueNumbers)
+    return uniqueNumbers.length
+}
+console.log(shortcut("Count my unique consonants!!"))
+//----------------------------------------------------
