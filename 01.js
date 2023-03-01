@@ -678,3 +678,17 @@ function excludingVatPrice(price){
 }
 console.log(excludingVatPrice())
 //-------------------------------------------------
+function include(arr, item){
+
+}
+//Проверка есть ли в массиве значение, которое дали
+let arr = ['a', 'b', 'c', 'd', 'e']
+function include(arr, item) {
+    if(arr.indexOf(item) !== -1) {
+        return true
+    } else {
+        return false
+    }
+}
+console.log(include(arr, 'b'))
+//------------------------------------------
