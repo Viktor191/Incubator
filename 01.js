@@ -664,3 +664,17 @@ function remainder(n, m){
 }
 console.log(remainder(13, 0))
 //-------------------------------------------------------
+function excludingVatPrice(price){
+    if(price === 0) {
+        return -1;
+    }
+
+    let result = price / 115 * 100;
+    if(result === NaN) {
+        return -1
+    }
+
+    return Number(result.toFixed(2));
+}
+console.log(excludingVatPrice())
+//-------------------------------------------------
