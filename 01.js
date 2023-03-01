@@ -692,3 +692,20 @@ function include(arr, item) {
 }
 console.log(include(arr, 'b'))
 //------------------------------------------
+//let numbers = []
+//console.log(numbers[0])
+//Складывает все элементы массива
+
+function sum (numbers) {
+  
+    //"use strict";
+    if(numbers.length === 0) {//проверяеть пустой ли масив по его длинне, если 0, то пустой
+      
+      return 0
+    } else {
+      const sumOfNumbers = numbers.reduce((acc, number) => acc + number);
+      return sumOfNumbers
+    }
+};
+console.log(sum ([]))
+//-----------------------------------------
