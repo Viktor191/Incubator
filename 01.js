@@ -709,3 +709,15 @@ function sum (numbers) {
 };
 console.log(sum ([]))
 //-----------------------------------------
+function mergeArrays(arr1, arr2) {
+    if(arr1.length === 0 && arr2.length === 0) {
+        return []
+    }
+    let result = arr1.concat(arr2);
+    result.sort(function(a, b) {
+        return a - b;
+    });
+    let result2 = result.filter((x, i) => result.indexOf(x) === i);
+    return result2
+}
+console.log(mergeArrays([1, 3, 5, 7, 9], [10, 8, 6, 6, 2]))
