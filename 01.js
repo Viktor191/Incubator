@@ -721,3 +721,12 @@ function mergeArrays(arr1, arr2) {
     return result2
 }
 console.log(mergeArrays([1, 3, 5, 7, 9], [10, 8, 6, 6, 2]))
+//--------------------------------------------
+function nameShuffler(str){
+    let arr = str.split(' ')
+    let result = arr[1] +' ' + arr[0]
+    return result
+}
+console.log(nameShuffler("john McClane"))
+//----------------------------------------
+
