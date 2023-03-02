@@ -742,3 +742,13 @@ function contamination(text, char){
 console.log(contamination('abcfdg', 'x'))
 //------------------------------------------
 
+function between(a, b) {
+
+    let arr = []
+
+    for(i = a; a <= b; a ++) {
+        arr.push(a);
+    }
+    return arr
+}
+console.log(between(4, 8))
