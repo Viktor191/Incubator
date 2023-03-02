@@ -752,3 +752,10 @@ function between(a, b) {
     return arr
 }
 console.log(between(4, 8))
+//------------------------------------------------
+function stringToArray(string){
+    let arr = string.split(' ')
+    return arr
+}
+console.log(stringToArray("Robin Singh"))
+//--------------------------------------------------
