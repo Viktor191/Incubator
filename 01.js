@@ -729,4 +729,16 @@ function nameShuffler(str){
 }
 console.log(nameShuffler("john McClane"))
 //----------------------------------------
+function contamination(text, char){
+
+    let result = ''
+
+    let a = char
+    for(i = 0; i < text.length; i++) {
+        result =  a + result
+    }
+    return result
+}
+console.log(contamination('abcfdg', 'x'))
+//------------------------------------------
 
