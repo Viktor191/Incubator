@@ -759,3 +759,10 @@ function stringToArray(string){
 }
 console.log(stringToArray("Robin Singh"))
 //--------------------------------------------------
+function typeValidation(variable, type) {
+    let a = typeof variable
+    return a === type
+}
+console.log(typeValidation("42", "number" ))
+//----------------------------------------------------
+
