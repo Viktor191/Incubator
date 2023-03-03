@@ -765,4 +765,11 @@ function typeValidation(variable, type) {
 }
 console.log(typeValidation("42", "number" ))
 //----------------------------------------------------
-
+function billboard(name, price = 30){
+    let result = 0
+    for(i = 0; i < name.length; i++) {
+        result = result + Number(price)
+    }
+    return result
+}
+console.log(billboard("Jeong-Ho Aristotelis"))
