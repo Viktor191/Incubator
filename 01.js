@@ -773,3 +773,17 @@ function billboard(name, price = 30){
     return result
 }
 console.log(billboard("Jeong-Ho Aristotelis"))
+//-----------------------------------------------------
+function pillars(numPill, dist, width) {
+    // your code here
+    if(numPill === 1) {
+        return 0
+    }
+    let numP = numPill * width
+    let dis = dist * 100 * (numPill - 1)
+    let result = (numP + dis) - (width * 2)
+    return result
+}
+console.log(pillars(2, 20, 25))
+//-----------------------------------------------------
+
