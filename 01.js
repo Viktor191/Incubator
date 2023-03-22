@@ -786,4 +786,42 @@ function pillars(numPill, dist, width) {
 }
 console.log(pillars(2, 20, 25))
 //-----------------------------------------------------
+function twoHighest(arr) {
+
+
+}
+
+function largest(arr) {
+    let d = []
+    let n = 2
+
+
+    if(arr.length === 0) {
+        return []
+    }
+
+    arr.sort(function(a, b) {
+        return a - b;
+    });
+
+    console.log(arr + ' neb')
+
+    d = arr.reverse()
+    console.log(d )
+
+    if(d[0] === d[1] && d.length === 0) {
+        return d.splice(0, 1)
+    }
+
+
+
+    let arr_2 = d.filter((item, index) => {
+        return d.indexOf(item) === index
+    });
+    return   arr_2.splice(0, 2)
+}
+//console.log(largest([7,5,3,2,1]))
+//console.log(largest([1,1,1,1,1]))
+console.log(largest([15, 20, 20, 17]))
+//------------------------------------------
 
